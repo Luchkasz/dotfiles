@@ -1,0 +1,95 @@
+{
+	"fxml_header": {
+		"prefix": "fxheader",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"",
+			"",
+			"<?import java.lang.*?>",
+			"<?import java.util.*?>",
+			"<?import javafx.scene.*?>",
+			"<?import javafx.scene.control.*?>",
+			"<?import javafx.scene.layout.*?>",
+			"<?import javafx.geometry.Insets?>",
+			"",
+			"",
+			"<${1:rootLayout} xmlns=\"http://javafx.com/javafx\" ",
+			"      xmlns:fx=\"http://javafx.com/fxml\" ",
+			"      prefHeight=\"${2:height}\" prefWidth=\"${3:width}\"",
+			"      fx:controller=\"${4:controller}\"",
+			"      >",
+			"${5}",
+			"</${1:rootLayout}>"
+		],
+		"description": "fxml_header"
+	},
+	"fxml_label": {
+		"prefix": "fxlabel",
+		"body": [
+			"<Label text=\"${1:text}\" labelFor=\"$${2:action}\"/>"
+		],
+		"description": "fxml_label"
+	},
+	"fxml_textfield": {
+		"prefix": "fxtextfield",
+		"body": [
+			"<TextField fx:id=\"${1:id}\"/>"
+		],
+		"description": "fxml_textfield"
+	},
+	"fxml_button": {
+		"prefix": "fxbutton",
+		"body": [
+			"<Button fx:id=\"${1:id}\" text=\"${2:text}\" onAction=\"#${3:action}\"/>"
+		],
+		"description": "fxml_button"
+	},
+	"fxml_padding": {
+		"prefix": "fxpadding",
+		"body": [
+			"<padding>",
+			"    <Insets right=\"${1:right}\" left=\"${2:left}\" bottom=\"${3:bottom}\" top=\"${4:top}\"/>",
+			"</padding>"
+		],
+		"description": "fxml_padding"
+	},
+	"fxml_padding_symetric": {
+		"prefix": "fxpaddingsymetric",
+		"body": [
+			"<padding>",
+			"    <Insets right=\"${1:horizontal}\" left=\"${1:horizontal}\" bottom=\"${2:vertical}\" top=\"${2:vertical}\"/>",
+			"</padding>"
+		],
+		"description": "fxml_padding_symetric"
+	},
+	"fxml_padding_all": {
+		"prefix": "fxpaddingall",
+		"body": [
+		  "<padding>",
+		  "    <Insets topRightBottomLeft=\"${1:value}\"/>",
+		  "</padding>"
+		],
+		"description": "fxml_padding_all"
+	  },
+	  "fxml_label_grid": {
+		"prefix": "fxgridlabel",
+		"body": [
+		  "<Label text=\"${1:text}\" labelFor=\"$${2:id}\" GridPane.columnIndex=\"${3:col}\" GridPane.rowIndex=\"${4:row}\"/> declare a placeholder (ctr"
+		],
+		"description": "fxml_label_grid"
+	  },
+	  "fxml_textfield_grid": {
+		"prefix": "fxgridtextfield",
+		"body": [
+			"<TextField fx:id=\"${1:id}\"  GridPane.columnIndex=\"${2:col}\" GridPane.rowIndex=\"${3:row}\"/>"
+		],
+		"description": "fxml_textfield"
+	},
+	"fxml_button_grid": {
+		"prefix": "fxgridbutton",
+		"body": [
+			"<Button fx:id=\"${1:id}\" text=\"${2:text}\" onAction=\"#${3:action}\"  GridPane.columnIndex=\"${4:col}\" GridPane.rowIndex=\"${5:row}\"/>"
+		],
+		"description": "fxml_button"
+	},
+}
