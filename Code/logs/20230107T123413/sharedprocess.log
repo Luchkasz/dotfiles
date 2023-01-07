@@ -1,2 +1,0 @@
-2023-01-07 12:34:15.192 [error] RequestService#request (browser) - error https://az764295.vo.msecnd.net/extensions/marketplace.json {}
-2023-01-07 12:34:15.719 [info] Starting worker process with pid 958 (type: fileWatcher, window: 1).
