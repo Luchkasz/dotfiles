@@ -1,0 +1,18 @@
+2023-01-07 12:34:13.697 [info] update#setState idle
+2023-01-07 12:34:14.899 [info] Starting extension host with pid 911 (fork() took 5 ms).
+2023-01-07 12:34:43.691 [info] update#setState checking for updates
+2023-01-07 12:34:44.301 [info] update#setState idle
+2023-01-07 12:42:34.174 [info] Extension host with pid 911 exited with code: null, signal: SIGTERM.
+2023-01-07 12:42:34.178 [error] [uncaught exception in main]: Error: SharedProcess: renderer process gone (detail: killed, code: 15)
+2023-01-07 12:42:34.178 [error] Error: SharedProcess: renderer process gone (detail: killed, code: 15)
+    at /opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:82:67261
+    at d.invoke (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:19:145)
+    at v.deliver (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:19:2032)
+    at b.fire (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:19:1670)
+    at /opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:17:20702
+    at d.invoke (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:19:145)
+    at v.deliver (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:19:2032)
+    at b.fire (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:19:1670)
+    at EventEmitter.<anonymous> (/opt/visual-studio-code/resources/app/out/vs/code/electron-main/main.js:79:96733)
+    at EventEmitter.emit (node:events:538:35)
+2023-01-07 12:42:34.181 [error] CodeWindow: renderer process gone (reason: killed, code: 15)
