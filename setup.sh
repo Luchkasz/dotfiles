@@ -10,7 +10,7 @@ makepkg -si --noconfirm
 cd ..
 rm -rf yay
 
-aur_apps=("rofi" "zsh" "xarchiver" "waterfox-bin" "visual-studio-code-bin" "vim" "unrar" "unzip" "thunar" "thunar-archive-plugin" "studio-3t" "spotify" "postman-bin" "pavucontrol" "mongodb-bin" "mongodb-tools-bin" "lxappearance" "jdk8-openjdk" "kitty" "discord" "arandr" "nitrogen" "gradle")
+aur_apps=("rofi" "zsh" "xarchiver" "waterfox-bin" "visual-studio-code-bin" "vim" "unrar" "unzip" "thunar" "thunar-archive-plugin" "studio-3t" "spotify" "postman-bin" "pavucontrol" "mongodb-bin" "mongodb-tools-bin" "lxappearance" "jdk8-openjdk" "kitty" "discord" "arandr" "nitrogen" "gradle" "xed" "stremio-beta" "ttf-fira-code" "ttf-firacode")
 
 for app in "${aur_apps[@]}"; do
     yay -S --noconfirm "$app"
