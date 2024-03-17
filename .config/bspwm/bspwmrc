@@ -1,0 +1,38 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+#$HOME/.config/polybar/launch.sh
+
+bspc monitor -d I II III IV V VI VII
+bspc monitor DP-0 -d I II III IV
+bspc monitor HDMI-0 -d V VI VII
+
+bspc config border_width         2
+bspc config window_gap           0.5
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+
+bspc config normal_border_color "#44475a"
+bspc config active_border_color "#bd93f9"
+bspc config focused_border_color "#8B34DE"
+bspc config presel_feedback_color "#6272a4"
+
+bspc rule -a android-studio state=floating border=off follow=on
+
+xsetroot -cursor_name volantes_cursors &
+sxhkd &
+picom &
+xrandr --auto --output HDMI-1 --mode 1360x768
+xrandr --auto --output DP-3 --mode 1920x1080 --rate 165 --primary
+xrandr --output None-1-1 --off
+nitrogen  --restore &
+wmname LG3D &
+xfce4-power-manager &
+
+
+
+
+
