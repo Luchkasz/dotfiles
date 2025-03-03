@@ -1,0 +1,67 @@
+### Apps ###
+
+# Terminal
+super + Return
+	kitty
+
+# Program Launcher
+super + d
+	rofi -show drun -monitor -1
+
+# Lock Screen
+super + Delete
+	betterlockscreen -l
+
+### BSPWM ###
+
+# Close Window
+super + w
+	bspc node -c
+
+# Kill Window
+super + shift + w
+	bspc node -k
+
+# Toggle Window States
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Focus Next/Previous Window on Desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
+
+# Switch Between Last Window/Desktop
+super + {grave, Tab}
+	bspc {node,desktop} -f last
+
+# Focus Next/Previous Desktop on Monitor
+super + {q,e}
+	bspc desktop -f {prev,next}.local
+
+# Move to Specific Desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Preselect Direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# Preselect Ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Cancel Preselection
+super + ctrl + space
+	bspc node -p cancel
+
+# Move Floating Window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Reload sxhkd Configuration
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Reload BSPWM
+super + alt + {q,r}
+	bspc {quit,wm -r}
